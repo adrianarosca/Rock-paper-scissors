@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lamg="en">
+
+<head>
+    <meta charst="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
+    <meta name="game" content="rock, paper, scissors">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h3>LET'S PLAY</h3>
+        <h4>ROCK, PAPER, SCISSORS</h4>
+        <p style="min-height: 30px;"></p>
+    </header>
+
+    <main>
+
+        <table>
+            <tr>
+                <th colspan="2" width="500px">SCORE:</th>
+            </tr>
+
+            <tr>
+                <td id="playerScore" width="250px">0</td>
+                <td id="computerScore" width="250px">0</td>
+            </tr>
+        </table>
+
+        <div class="sides">
+            <div class="playerSide">
+                <p>YOU</p>
+                <img src="images/image1.jpg" width="200px"height="200px">
+                <form>
+                <label id="playerChoice" style="min-height: 30px;">Your choice:</label>
+                <select  id="selector">
+                    <option value="none"></option>
+                    <option id="rock" value="rock">rock</option>
+                    <option id="paper" value="paper">paper</option>
+                    <option id="scissors" value="scissors">scissors</option>
+                </select>
+            </form>
+            </div>
+
+            <div class="computerSide">
+                <p>COMPUTER</p>
+                <img src="images/image1.jpg" width="200px" height="200px">
+                <p id="computerChoice" style="min-height: 30px;">Computer's choice:</p>
+            </div>
+        </div>
+
+        <button type="button">START GAME</button>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
